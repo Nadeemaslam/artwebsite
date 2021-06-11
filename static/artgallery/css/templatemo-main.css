@@ -754,3 +754,23 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+.gallery{
+    padding-bottom:30px;
+}
+
+.gallery em {
+    color: #ff7d27;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.gallery span{
+    display: inline-block;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 48px;
+    color: #fff;
+    p
+}
