@@ -36,10 +36,20 @@ def logoutUser(request):
 
 
 
+def publications(request):
+
+    return render(request, template_name='artgallery/publications.html')
+
 def contact(request):
 
     return render(request, template_name='artgallery/contact.html')
 
+def aboutus(request):
 
-def products(request):
-    return render(request, template_name='artgallery/products.html')
+    return render(request, template_name='artgallery/aboutus.html')
+
+
+def gallery(request):
+
+    return render(request, template_name='artgallery/gallery.html')
+
