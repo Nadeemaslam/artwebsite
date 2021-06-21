@@ -17,7 +17,8 @@
         <link rel="stylesheet" href="{% static 'artgallery/css/owl-carousel.css' %}">
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <script src="{% static 'artgallery/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
 
     </head>
@@ -42,13 +43,13 @@
     <div class="container">
 
       <div class="logo float-left">
-        <a href="{% url 'index' %}" class="scrollto"><img src="{% static 'artgallery/images/logo.png' %}" alt="logo" class="img-fluid"></a>
+        <a href="{% url 'index' %}" class="scrollto"><img src="{% static 'artgallery/images/ka_logo.png' %}" alt="logo" class="img-fluid"></a>
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="{% url 'index' %}">Home</a></li>
-          <li><a href="{% url 'aboutus' %}">About Us</a></li>
+          <li><a href="{% url 'aboutus' %}">About</a></li>
           <li><a href="{% url 'publications' %}">Publications</a></li>
           <li><a href="{% url 'gallery' %}">Gallery</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
