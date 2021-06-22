@@ -71,10 +71,9 @@ a:hover { color: #FF0; }
 }
 
 .scrollto {
-    font-family: 'Ruthie', cursive;
+    font-family: 'Qwigley', cursive;
     color:#000;
     font-size:30px;
-    font-weight:900;
     letter-spacing: 3px;
 }
 
@@ -109,8 +108,7 @@ a:hover { color: #FF0; }
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 24px;
-  font-family: 'Qwigley', cursive;
-  font-weight: 500;
+  font-family: 'Ruthie', cursive;
 }
 
 .main-nav a:hover,
@@ -1196,4 +1194,10 @@ body.lb-disable-scrolling {
 #aboutus {
   padding: 120px 0 0 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.artist-div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
 }
