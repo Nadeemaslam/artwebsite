@@ -8,7 +8,7 @@ https://templatemo.com/tm-526-vanilla
 
 p {
   font-size: 15px;
-  line-height: 25px;
+  line-height: 32px;
 }
 
 section {
@@ -494,12 +494,44 @@ h4, .h4 {
 }
 
 .service-content .service-item {
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 25px 30px;
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
+  height:60vh;
+  border:10px solid #fa7d28;
+
 }
+
+#tile1{
+    background:url(../images/tile1.png);
+}
+
+#tile2{
+    background:url(../images/tile2.png);
+}
+
+#tile3{
+    background:url(../images/tile3.png);
+}
+
+#tile4{
+    background:url(../images/tile4.png);
+}
+
+.zoomA {
+  height: auto;
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.3s;
+}
+
+
+.zoomA:hover {
+  transform: scale(1.1);
+}
+
+
+
 
 .service-content .service-item .line-dec {
   width: 45px;
