@@ -9,4 +9,6 @@ urlpatterns = [
     path('publications/', views.publications, name='publications'),
     # path('logout/', logoutUser, name='logout'),
     path(r'contact/', views.contact, name='contact'),
+    path(r'shop/', views.shop, name='shop'),
+    path(r'services/', views.services, name='services'),
 ]

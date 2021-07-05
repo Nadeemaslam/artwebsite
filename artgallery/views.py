@@ -53,3 +53,10 @@ def gallery(request):
 
     return render(request, template_name='artgallery/gallery.html')
 
+def shop(request):
+
+    return render(request, template_name='artgallery/shop.html')
+
+def services(request):
+
+    return render(request, template_name='artgallery/services.html')
