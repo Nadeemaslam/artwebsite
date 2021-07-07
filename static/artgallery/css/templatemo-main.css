@@ -1296,3 +1296,13 @@ body.lb-disable-scrolling {
   background: #003b7a;
   border-color: #003b7a;
 }
+
+
+/*--------------SHOP-----------*/
+
+.testimonials-item .text-content{
+    background-color: #fff8f8;
+    text-align: center;
+    padding: 20px;
+
+    }

@@ -60,3 +60,8 @@ def shop(request):
 def services(request):
 
     return render(request, template_name='artgallery/services.html')
+
+
+def exhibitions(request):
+
+    return render(request, template_name='artgallery/exhibitions.html')
