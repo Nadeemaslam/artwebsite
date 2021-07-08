@@ -65,3 +65,8 @@ def services(request):
 def exhibitions(request):
 
     return render(request, template_name='artgallery/exhibitions.html')
+
+
+def workshop(request):
+
+    return render(request, template_name='artgallery/workshop.html')

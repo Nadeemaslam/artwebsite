@@ -53,23 +53,23 @@
           <li><a href="{% url 'publications' %}">Publications</a></li>
           <li><a href="{% url 'gallery' %}">Gallery</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
-            <li><a href="{% url 'shop' %}">Shop</a></li>
-              <li><a href="{% url 'services' %}">Services</a></li>
-          <li class="drop-down"><a href="{% static 'artgallery/' %}">Events</a>
+             <li class="drop-down"><a href="{% static 'artgallery/' %}">Events</a>
             <ul>
               <li><a href="{% url 'exhibitions' %}">Recent Exhibitions</a></li>
               <li class="drop-down"><a href="{% static 'artgallery/' %}">Workshops</a>
                 <ul>
-                  <li><a href="{% static 'artgallery/#' %}">Deep Drop Down 1</a></li>
-                  <li><a href="{% static 'artgallery/#' %}">Deep Drop Down 2</a></li>
-                  <li><a href="{% static 'artgallery/#' %}">Deep Drop Down 3</a></li>
-                  <li><a href="{% static 'artgallery/#' %}">Deep Drop Down 4</a></li>
-                  <li><a href="{% static 'artgallery/#' %}">Deep Drop Down 5</a></li>
+                  <li><a href="{% url 'workshop1' %}">2021</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2022</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2023</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2024</a></li>
+                  <li><a href="{% static 'artgallery/#' %}">2025</a></li>
                 </ul>
               </li>
               <li><a href="{% static 'artgallery/#' %}">Shows</a></li>
             </ul>
           </li>
+            <li><a href="{% url 'shop' %}">Shop</a></li>
+              <li><a href="{% url 'services' %}">Services</a></li>
         </ul>
       </nav><!-- .main-nav -->
 

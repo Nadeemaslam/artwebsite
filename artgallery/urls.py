@@ -12,4 +12,5 @@ urlpatterns = [
     path(r'shop/', views.shop, name='shop'),
     path(r'services/', views.services, name='services'),
     path(r'exhibitions/', views.exhibitions, name='exhibitions'),
+    path(r'workshop/', views.workshop, name='workshop1'),
 ]
