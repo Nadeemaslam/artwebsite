@@ -19,6 +19,7 @@ section {
 body { 
   position: relative; /* we need this for the scrollspy */ 
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
 }
 
 a { color: #3CC; }
@@ -70,11 +71,18 @@ a:hover { color: #FF0; }
   max-height: 26px;
 }
 
+/*font-family: 'Italiana', serif;
+font-family: 'Raleway', sans-serif;
+Della Respira
+*/
 .scrollto {
-    font-family: 'Qwigley', cursive;
-    color:#000;
-    font-size:30px;
+    font-family: 'Raleway', sans-serif;
+    color:#004289;
+    font-size: 30px;
     letter-spacing: 3px;
+    font-weight: 300;
+    /*text-shadow: 1px 1px 4px #282b2f4b ;*/
+    
 }
 
 .scrollto:hover {
@@ -110,10 +118,11 @@ a:hover { color: #FF0; }
   display: block;
   position: relative;
   color: #004289;
-  padding: 10px 15px;
+  padding: 10px 1em;
   transition: 0.3s;
-  font-size: 24px;
-  font-family: 'Ruthie', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Raleway', cursive;
 }
 
 .main-nav a:hover,
@@ -413,7 +422,10 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../images/1st-section.jpg);
+  background-image: url(../images/1st-section.png);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.267);
+
 }
 
 .baner-content h1 {
@@ -443,13 +455,31 @@ a:hover { color: #FF0; }
   margin-top: 15px;
 }
 
+.baner-content .container{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;  
+  color: white;
+}
+
+
+.baner-content .container .art-cred{
+  padding: 1em;
+  font-family: monospace;
+  letter-spacing: 1px;
+  color: #fff;
+  background-color: rgba(128, 128, 128, 0.24);
+  border-radius: 5px;
+}
 
 
 .service-content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(../images/bg2nd.jpg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
@@ -499,25 +529,46 @@ h4, .h4 {
   color: #fff;
   margin-bottom: 30px;
   height:60vh;
-  border:10px solid #fa7d28;
+  
+  
 
 }
 
 #tile1{
     background:url(../images/tile1.png);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px #282b2f7a;
 }
 
 #tile2{
     background:url(../images/tile2.png);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px #282b2f7a;
 }
 
 #tile3{
     background:url(../images/tile3.png);
-}
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px #282b2f7a;
+  }
 
 #tile4{
     background:url(../images/tile4.png);
-}
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 2px 2px 5px #282b2f7a;
+  }
 
 .zoomA {
   height: auto;
@@ -525,6 +576,13 @@ h4, .h4 {
   transition: transform ease-in-out 0.3s;
 }
 
+.zoomA h2{
+  font-size: 2.3em;
+}
+
+.zoomA p{
+  font-size: 1.2em;
+}
 
 .zoomA:hover {
   transform: scale(1.1);
@@ -536,7 +594,7 @@ h4, .h4 {
 .service-content .service-item .line-dec {
   width: 45px;
   height: 3px;
-  background-color: #ff7d27;
+  background-color: #fff;
   margin: 20px auto 15px auto;
 }
 
@@ -601,8 +659,14 @@ h4, .h4 {
   background-image: url(../images/4th-section.jpg);
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
+  background-size: 100vw 200vh;
+  background-blend-mode: overlay;
+  background-color: #19197075;
+  background-repeat: no-repeat;
+}
+
+.tabs-content .container{
+  padding-bottom: 2em;
 }
 
 section {
@@ -635,20 +699,20 @@ section {
   font-size: 14px;
   font-weight: 700;
   padding:10px 15px;
-  border:4px solid #fff;
+  border:2px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px grey;
 }
 
 .tabs a:hover {
-  color: #ff7d27;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 .tabs .active {
-  border:4px solid #ff7d27;
+  border:4px solid #003166;
 }
 
-.tabgroup div  {
-
-}
 
 .tabgroup p {
   background-color: rgba(0, 0, 0, 0.5);
@@ -709,7 +773,7 @@ section {
 
 #contact button {
   display: inline-block;
-  background-color: #ff7d27;
+  background-color: #003166;
   padding: 15px 24px;
   width: 100%;
   border-radius: 3px;
@@ -757,7 +821,7 @@ footer ul li a {
   line-height: 40px;
   text-align: center;
   display: inline-block;
-  background-color: #ff7d27;
+  background-color: #fff;
   color: #282b2f;
   border-radius: 50%;
   text-decoration: none;
@@ -767,7 +831,7 @@ footer ul li a {
 
 footer ul li a:hover {
   color: #282b2f;
-  background-color: #ff8e43;
+  background-color: #3395ff;
 }
 
 footer p {
@@ -780,7 +844,7 @@ footer p {
 }
 
 footer em {
-  color: #ff8e43;
+  color:#fff;
   font-weight: 600;
   font-style: normal;
 }
@@ -1233,11 +1297,34 @@ body.lb-disable-scrolling {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
+#aboutus .container{
+  padding-bottom: 2em;
+}
+
+#aboutus h2{
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+#aboutus hr{
+  border: 2px solid grey;
+  width: 100px;
+}
+
+#aboutus strong{
+  letter-spacing: 1.5px;
+}
 
 .artist-div {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 25px;
 }
+
+#aboutus p{
+  text-align: justify;
+  line-height: 1.8em;
+}
+
 
 /*--------------services-----------*/
 
