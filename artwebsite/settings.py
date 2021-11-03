@@ -27,6 +27,29 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Database
+
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
+    }
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = ['*']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'paintings',
+            'USER': 'admin',
+            'PASSWORD': 'root',
+            'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
+        }
+    }
+
 
 # Application definition
 
@@ -128,3 +151,5 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
