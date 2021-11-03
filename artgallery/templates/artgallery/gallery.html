@@ -4,173 +4,44 @@
  <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio" class="clearfix">
-      <div class="container">
 
-        <header class="section-header">
-          <h3 class="section-title">Our Portfolio</h3>
-        </header>
+    <section id="gallery2">
+  <div class="container">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">OIL</li>
-              <li data-filter=".filter-card">ACRYLIC</li>
-              <li data-filter=".filter-web">Mixed Media/Ink</li>
-            </ul>
-          </div>
+    <div class="row">
+      {%for posts in painting %}
+      <div class="dis col-md-4">
+        <div class="gallery-item">
+            <img src="{{ posts.image.url }}" alt="">
+            <div class="details">
+              <h1>
+                <strong> {{posts.title}}</strong>
+              </h1>
+              <p>
+                Medium: <strong>{{posts.medium}}</strong>
+              </p>
+              <p>
+                Size: <strong>{{posts.dimension}}</strong>
+              </p>
+              <p>
+                Technique: <strong>{{posts.technique}}</strong>
+              </p>
+              <p>
+                Year: <strong>{{posts.year}} </strong>
+              </p>
+
+            </div>
+
+
         </div>
 
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/app1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">OIL 1</a></h4>
-                <p>Oil Painting</p>
-                <div>
-                  <a href="{% static  'artgallery/img/portfolio/app1.jpg' %}" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/web3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static  'artgallery/#' %}">Mixed Media
-</a></h4>
-                <p>Mixed Media</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/web3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/app2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">OIL 2</a></h4>
-                <p>Oil 2</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/app2.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/card2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/{% static 'artgallery/#">Acrylic 2</a></h4>
-                <p>Acrylic</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/web2.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">Mixed Media
-</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/web2.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/app3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">OIL 3</a></h4>
-                <p>Oil Painting</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/app3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/card1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">Acrylic 1</a></h4>
-                <p>Acrylic</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/card1.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/card3.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">Acrylic 3</a></h4>
-                <p>Acrylic</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/card3.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="{% static 'artgallery/img/portfolio/web1.jpg' %}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="{% static 'artgallery/#' %}">Mixed Media/Ink</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="{% static 'artgallery/img/portfolio/web1.jpg' %}" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="fa fa-eye" aria-hidden="true"></i>
-</a>
-                  <a href="{% static 'artgallery/#' %}" class="link-details" title="More Details"><i class="fa fa-external-link" aria-hidden="true"></i>
-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
 
       </div>
-    </section><!-- #portfolio -->
+      {% endfor %}
+    </div>
+
+  </div>
+
+</section>
+
 {% endblock %}
