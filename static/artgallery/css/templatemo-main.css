@@ -1400,7 +1400,7 @@ body.lb-disable-scrolling {
 
 
 .shop-header {
-color: #FE980F;
+    color: #004289;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -1637,7 +1637,7 @@ h2.title {
 }
 
 .productinfo h2{
-	color: #FE980F;
+	color: #004289;
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -1836,7 +1836,7 @@ h2.title {
 }
 
 .filter-active {
-    background: #fb9b17;
+    background: #004289;
     color: #fff !important;
     border-radius:10px;
 }
