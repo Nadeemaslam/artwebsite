@@ -25,17 +25,6 @@ SECRET_KEY = 'n!m1+*_m1#j&5aja7rh8lpimf!0ryq@7y8*lu4_pdw6s87dv%y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Database
-
-
-DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.sqlite3',
-    'NAME': 'db.sqlite3',
-
-ALLOWED_HOSTS = ['*']
-
-
 
 # Application definition
 
@@ -83,12 +72,26 @@ WSGI_APPLICATION = 'artwebsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'db.sqlite3',
+        }
     }
-}
+    ALLOWED_HOSTS = ['*']
+else:
+    ALLOWED_HOSTS = ['*']
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'art',
+            'USER': 'admin',
+            'PASSWORD': 'root',
+            'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
+        }
+    }
 
 
 # Password validation
