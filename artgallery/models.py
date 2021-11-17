@@ -3,10 +3,10 @@ from django.db import models
 
 # Create your models here.
 
-FORSALE = [
+FORSALE = {
     ('YES', 'YES'),
     ('NO', 'NO'),
-]
+}
 
 
 def get_image_path(instance, filename):
